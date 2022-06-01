@@ -10,6 +10,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "nw-builder": "^3.7.0"
+    "nw-builder": "NervosaX/nw-builder"
   }
 }
