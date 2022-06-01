@@ -1,0 +1,20 @@
+name: Build nwjs
+
+on:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - run: sudo apt install --no-install-recommends -yqq wine-stable
+
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+
+      - uses: actions/checkout@v2
+
+      - run: yarn
+      - run: node build.js
